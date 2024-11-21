@@ -1,0 +1,251 @@
+:root {
+    /* ===== Colors ===== */
+    --body-color: #f2f2f2db;
+    --sidebar-color: #ffffff52;
+    --primary-color: #5bbf8f;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #ededed;
+    --text-color: #a69e9e;
+
+    /* ===== Transition  ===== */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-02: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    transition: var(--tran-02);
+    position: relative;
+}
+
+h3 a.navbar-brand {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+p.web-title-des {
+    color: #f5f5f5;
+    font-size: .9rem;
+}
+
+div.nav-divider {
+    height: 1.5px;
+    width: 80%;
+    background: #f5f5f5;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+}
+
+div#sideNavBar {
+    position: relative;
+}
+
+div.sec-box {
+    display: flex;
+}
+
+div.sec1 {
+    background: var(--primary-color);
+    width: 15%;
+    height: 100vh;
+    position: relative;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.203);
+}
+
+div.sec2 {
+    background: var(--primary-color-light);
+    width: 85%;
+    height: 100vh;
+}
+
+button#toggle-navbar {
+    position: absolute;
+    z-index: 1;
+}
+
+p.text {
+    display: none;
+}
+
+button#nav-toggle {
+    background: var(--primary-color);
+    color: #f5f5f5;
+    padding: .5rem .8rem;
+    border: none;
+    border-radius: 5rem;
+    position: absolute;
+    top: 2rem;
+    left: 13.5rem;
+    display: block;
+    z-index: 1;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* position: absolute; */
+    /* z-index: 1; */
+    margin: 1rem;
+    text-align: center;
+}
+
+ button#toggle-navbar1 {
+    padding: 2px 6px;
+    height: 1.5rem;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 13.9rem;
+ }
+
+ button#toggle-navbar2 {
+    display: none;
+    padding: 2px 6px;
+    height: 1.5rem;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+    transition: all .5 ease-in-out;
+ }
+
+div.top-navbar {
+    height: 3rem;
+    width: 100%;
+    background: var(--primary-color);
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.203);
+}
+
+/* div.row {
+    height: 90vh;
+} */
+
+/* Nav Items */
+
+div.nav-items {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.child {
+    padding: 1.2rem;
+    width: 80%;
+    text-align: center;
+}
+
+div.child a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+div.nav-items-bottom {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.child-bottom {
+    width: 50%;
+    text-align: center;
+    margin-top: -2.5rem;
+}
+
+div.child-bottom a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+div.child-bottom:first-child {
+    border-right: 1px solid #f5f5f5;
+}
+
+div.sideNavHalf {
+    display: none;
+}
+
+svg.fa-home {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+}
+
+svg.fa-coins {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-tasks {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-receipt {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-cube {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-bullhorn {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-hands-usd {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-envelope-open {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+svg.fa-question {
+    width: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    color: white;
+}
+
+div.sideNavHalf .nav-items-bottom {
+    flex-direction: column;
+    gap: .5rem;
+}
