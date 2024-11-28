@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}"> -->
-    <link rel="stylesheet" href="{{ asset('/css/dashboard-nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/dashboard-nav.css') }}">\
+
+    <!-- USER DASHBOARD DESIGN -->
+    <link rel="stylesheet" href="{{ asset('/css/user-dashboard.css') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
     <title>Dashboard Nav</title>
 </head>
@@ -34,7 +36,7 @@
                     <div class="side-division">
                         <ul class="side-nav-list">
                             <li>
-                                <a href="/admin/dashboard">
+                                <a href="/dashboard">
                                     <span>
                                         <i class="fa fa-home" aria-hidden="true"></i>
                                     </span>
@@ -42,7 +44,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/daily-tasks">
+                                <a href="{{route('user-daily-tasks')}}">
                                     <span>
                                         <i class="fa fa-list-check" aria-hidden="true"></i>
                                     </span>
@@ -50,7 +52,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/earnings">
+                                <a href="{{route('user-earnings')}}">
                                     <span>
                                         <i class="fa fa-coins" aria-hidden="true"></i>
                                     </span>
@@ -58,7 +60,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/broadcast">
+                                <a href="{{route('user-broadcast')}}">
                                     <span>
                                         <i class="fa fa-circle" aria-hidden="true"></i>
                                     </span>
@@ -66,7 +68,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/withdraw-history">
+                                <a href="{{route('user-withdraw-history')}}">
                                     <span>
                                         <i
                                             class="fa fa-money-bill-transfer"
@@ -76,7 +78,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/packages">
+                                <a href="{{route('user-packages')}}">
                                     <span>
                                         <i class="fa fa-boxes-stacked" aria-hidden="true"></i>
                                     </span>
@@ -84,7 +86,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/promo">
+                                <a href="{{route('user-promo')}}">
                                     <span>
                                         <i class="fa fa-ticket" aria-hidden="true"></i>
                                     </span>
@@ -92,7 +94,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/invite">
+                                <a href="{{route('user-invite')}}">
                                     <span>
                                         <i class="fa fa-square-plus" aria-hidden="true"></i>
                                     </span>
@@ -100,15 +102,15 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/ask">
+                                <a href="{{route('user-ask')}}">
                                     <span>
                                         <i class="fa fa-circle-question" aria-hidden="true"></i>
                                     </span>
-                                    <span class="nav-names"> FAQs </span>
+                                    <span class="nav-names"> Ask </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/dashboard/shop">
+                                <a href="{{route('user-shop')}}">
                                     <span>
                                         <i class="fa fa-cart-shopping" aria-hidden="true"></i>
                                     </span>
